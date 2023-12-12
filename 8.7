@@ -1,0 +1,13 @@
+# Author:Mason Andrews
+
+def print_names(nested_list):
+    for row in nested_list:
+        for name in row:
+            possessive_name = name + ("'" if name[-1] == 's' else "'s")
+            print(possessive_name)
+
+nested_rows = [["Alice", "Bob", "Charlie"],
+               ["David", "Emily", "Frank"],
+               ["George", "Helen", "Ivy"]]
+
+print_names(nested_rows)
